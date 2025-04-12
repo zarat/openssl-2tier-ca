@@ -9,9 +9,9 @@ req_extensions = v3_ca
 C = AT
 ST = Vienna
 L = Vienna
-O = AKM
+O = Zarat
 OU = Intermediate CA
-CN = AKM EnterpriseIssuing CA
+CN = Zarat EnterpriseIssuing CA
 
 [v3_ca]
 basicConstraints = critical, CA:TRUE, pathlen:0
