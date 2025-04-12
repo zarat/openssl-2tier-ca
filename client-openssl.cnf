@@ -9,9 +9,9 @@ req_extensions = v3_req
 C = AT
 ST = Vienna
 L = Vienna
-O = AKM
-OU = INFRA-IT
-CN = letsencrypt.akm.at
+O = Zarat
+OU = Server
+CN = server1.zarat.ml
 
 [v3_req]
 keyUsage = digitalSignature, keyEncipherment, nonRepudiation
@@ -19,4 +19,4 @@ extendedKeyUsage = serverAuth, clientAuth, codeSigning, emailProtection
 subjectAltName = @alt_names
 
 [alt_names]
-DNS.1 = letsencrypt.akm.at
+DNS.1 = server1.zarat.ml
