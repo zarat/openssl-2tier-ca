@@ -11,7 +11,7 @@ ST = Vienna
 L = Vienna
 O = Zarat
 OU = Intermediate CA
-CN = Zarat EnterpriseIssuing CA
+CN = Zarat Intermediate CA
 
 [v3_ca]
 basicConstraints = critical, CA:TRUE, pathlen:0
