@@ -7,3 +7,12 @@ openssl x509 -req -in client.csr -CA ca\intermediate\intermediate-ca.crt -CAkey 
 
 REM In PEM Format konvertieren
 openssl x509 -in client.crt -out client.crt.pem -outform PEM
+
+REM Generate public key
+openssl x509 -in client.crt.pem -pubkey -noout > client.pubkey.pem
+
+REM Sign a file
+openssl dgst -sha256 -sign client.key -out example.sig example.exe
+
+REM Check signature
+openssl dgst -sha256 -verify client.pubkey.pem -signature example.sig openssl.exe
